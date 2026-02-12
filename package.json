@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "svgr": "svgr --typescript --out-dir src/components/Icons src/assets/*.svg"
+    "svgr": "svgr --typescript --out-dir src/components/Icons src/assets/content-5.svg"
   },
   "dependencies": {
     "prettier": "^3.8.1",

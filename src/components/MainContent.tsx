@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import JobCard from './JobCard';
 import InnerHeader from './InnerHeader';
+import JobDetail from './JobDetail';
 import jobsData from '../data/jobs.json';
 
 interface Job {
@@ -22,22 +23,43 @@ interface Job {
   applied: boolean;
 }
 
-const MainContent: React.FC = () => {
+interface MainContentProps {
+  selectedJob: Job | null;
+  onSelectJob: (job: Job | null) => void;
+}
+
+const MainContent: React.FC<MainContentProps> = ({ selectedJob, onSelectJob }) => {
   const jobs: Job[] = jobsData;
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // When a job is selected, ensure the scrollable area resets to the top
+  useEffect(() => {
+    if (selectedJob && scrollRef.current) {
+      scrollRef.current.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }, [selectedJob]);
 
   return (
-    <div className="flex-1 p-6 bg-gray-100 overflow-auto">
+    <div
+      ref={scrollRef}
+      className="flex-1 p-6 pt-14 pr-2 bg-gray-100 overflow-auto"
+    >
       <div className="w-full">
         {/* Inner Header Controls */}
-        <div className="mb-6">
-          <InnerHeader />
-        </div>
+        <InnerHeader
+          selectedJob={selectedJob}
+          onBack={() => onSelectJob(null)}
+        />
 
-        <div className="space-y-4">
-          {jobs.map(job => (
-            <JobCard key={job.id} job={job} />
-          ))}
-        </div>
+        {selectedJob ? (
+          <JobDetail job={selectedJob} />
+        ) : (
+          <div className="space-y-4">
+            {jobs.map(job => (
+              <JobCard key={job.id} job={job} onSelect={onSelectJob} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

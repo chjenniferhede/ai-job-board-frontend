@@ -1,8 +1,8 @@
 import React from 'react';
 import { LocationIcon } from './Icons/Content-icons';
-import Tags from './Tags';
+import Tags from './Helper/Tags';
 import { HeartIcon, ShareIcon } from './Icons/Card-icons';
-import MatchDoughnut from './MatchDoughnut';
+import MatchDoughnut from './Helper/MatchDoughnut';
 
 interface Job {
   id: number;
@@ -25,9 +25,10 @@ interface Job {
 
 interface JobCardProps {
   job: Job;
+  onSelect?: (job: Job) => void;
 }
 
-const JobCard: React.FC<JobCardProps> = ({ job }) => {
+const JobCard: React.FC<JobCardProps> = ({ job, onSelect }) => {
   const getMatchColor = (match: number) => {
     if (match >= 90) return 'text-textPrimary border-green';
     if (match >= 80) return 'text-textPrimary border-green';
@@ -35,24 +36,22 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
     return 'text-orange border-orange';
   };
 
-  const getMatchBgColor = (match: number) => {
-    if (match >= 90) return 'bg-green/10';
-    if (match >= 80) return 'bg-green/10';
-    if (match >= 60) return 'bg-orange/10';
-    return 'bg-orange/10';
-  };
-
   return (
-    <div className="bg-white rounded-lg p-6 hover:shadow-md transition-shadow w-full">
-      <div className="grid grid-cols-[1fr_4fr] gap-6 mb-6 items-start w-full">
+    <div
+      className="bg-white rounded-3xl p-6 shadow-sm border border-transparent hover:border-purple/20 transition-all cursor-pointer group w-full"
+      onClick={() => onSelect?.(job)}
+    >
+      <div className="grid grid-cols-[auto_1fr] gap-6 mb-6 items-start w-full">
         {/* Match Circle */}
-        <div className="relative mx-auto">
-          <MatchDoughnut percent={job.match} size={112} strokeWidth={10} />
-          <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-            <div className={`text-2xl font-bold text-textPrimary`}>
-              {job.match}%
+        <div className="flex items-start justify-start">
+          <div className="relative" style={{ width: 120, height: 120 }}>
+            <MatchDoughnut percent={job.match} size={120} strokeWidth={12} />
+            <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+              <div className={`text-xl font-bold ${getMatchColor(job.match)}`}>
+                {job.match}%
+              </div>
+              <div className={`text-sm ${getMatchColor(job.match)}`}>Match</div>
             </div>
-            <div className={`text-lg text-textPrimary`}>Match</div>
           </div>
         </div>
 
@@ -116,16 +115,18 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4 text-sm text-gray-500">
-            <span>{job.postedTime}</span>
+          <div className="flex items-center space-x-3 text-base text-gray-500">
+            <span className="bg-purpleSecondary/10 text-gray-700 px-4 py-1 rounded-full">
+              {job.postedTime}
+            </span>
             <span>{job.applicants}</span>
           </div>
 
           <div className="flex items-center space-x-2">
-            <button className="px-4 py-2 border-2 border-gray-300 text-textPrimary rounded-full hover:bg-gray-50 transition-colors font-medium text-lg leading-6 tracking-tight">
+            <button className="shrink-x-on-hover px-4 py-2 border-2 border-gray-300 text-textPrimary rounded-full hover:bg-gray-50 transition-colors font-medium text-lg leading-6 tracking-tight">
               Apply
             </button>
-            <button className="px-4 py-2 bg-green text-textPrimary rounded-full hover:bg-green transition-colors font-medium text-lg leading-6 tracking-tight">
+            <button className="shrink-x-on-hover px-4 py-2 border-2 border-green bg-green text-textPrimary rounded-full hover:bg-green transition-colors font-medium text-lg leading-6 tracking-tight">
               {job.applied ? 'Applied' : 'Mock Interview'}
             </button>
           </div>

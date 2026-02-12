@@ -1,19 +1,94 @@
 [
   {
     "id": 1,
-    "title": "Web Application Developer",
-    "company": "Backd Business Funding",
-    "location": "Austin, Texas Metropolitan Area",
-    "type": "Full time",
-    "experience": "Mid Level",
-    "salary": "$65k/yr - $70k/yr",
-    "match": 64,
-    "skillsMatch": "0 of 3 skills match",
-    "remote": "On-site",
-    "postedTime": "1 hours ago",
-    "applicants": "25 applicants",
-    "description": "We are looking for a skilled web developer to join our team and help build innovative financial solutions.",
-    "skills": ["JavaScript", "React", "Node.js"],
+    "title": "UX Designer",
+    "company": "Company name",
+    "location": "Ann Arbor, MI",
+    "type": "Internship",
+    "experience": "5+ years exp",
+    "salary": "$90K/yr - $130K/yr",
+    "match": 93,
+    "skillsMatch": "7 of 8 skills match",
+    "remote": "Remote",
+    "postedTime": "2 hours ago",
+    "applicants": "27 applicants",
+    "description": "Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description Job description.",
+    "skills": [
+      "Accidental Death and Dis...",
+      "Amazon Web Services (AWS)",
+      "Analysis Skills",
+      "DevOps",
+      "Apache ActiveMQ",
+      "Application Programming Interface (API)",
+      "Call Center",
+      "Change Control"
+    ],
+    "required": [
+      "3+ years of design experience",
+      "3+ years of delivering design solutions as a UX designer or interaction designer experience",
+      "Have an available online portfolio",
+      "Experience prototyping (HTML, XHTML, JavaScript, CSS, Flash or Flash Catalyst, or Axure)"
+    ],
+    "preferred": [
+      "2+ years of mass-market consumer web / mobile products experience",
+      "Experience working in a collaborative team and working directly with developers for implementation of designs"
+    ],
+    "responsibilities": [
+      "Collaborate and work closely with product management, engineering, sales, and research from design concept to design solution, setting UX guidelines and driving cross-team collaboration and sharing, as well as establish best practices for interaction models and user interface design throughout the team.",
+      "Work in a start-up style environment, where iteration is encouraged and design acumen is demonstrated through design end-to-end product ownership.",
+      "Communicate complex, interactive design concepts clearly and persuasively across different audiences and varying levels of the organization through design communication, presentation, interpersonal and analytical skills.",
+      "Earn trust with product managers to develop shared vision and use research and data to identify opportunities and inform decisions."
+    ],
+    "benefits": [
+      {
+        "icon": "🏠",
+        "title": "Remote Flexibility:",
+        "description": "Work from wherever you're most productive and happy."
+      },
+      {
+        "icon": "📈",
+        "title": "Equity Options:",
+        "description": "Become a shareholder through our stock options plan after 6 months."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Meal Vouchers:",
+        "description": "Enjoy an €8/day meal voucher to make your lunch break even better."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Lunch at the Office:",
+        "description": "If you're in Bologna, we have lunch together at the office, and it is on us!"
+      },
+      {
+        "icon": "🏥",
+        "title": "Health Coverage:",
+        "description": "Comprehensive support through the Metasalute Health Assistance Fund."
+      },
+      {
+        "icon": "🎂",
+        "title": "Birthday Bliss:",
+        "description": "Celebrate your day with an extra day off, just for you."
+      },
+      {
+        "icon": "💚",
+        "title": "Mental Wellness:",
+        "description": "Free access to ifeel, our psychological support platform."
+      },
+      {
+        "icon": "🌍",
+        "title": "International Environment:",
+        "description": "Grow your language skills while working with a diverse and global team."
+      }
+    ],
+    "companyInfo": {
+      "name": "Company name",
+      "founded": "Founded in 1979",
+      "location": "Carlsbad, California, US",
+      "employees": "1001-5000 employees",
+      "website": "Website",
+      "description": "Kforce has a client that is seeking a UI/UX Developer in Madison, WI. Overview: In brief, we a handful of AI-powered tools for our workforce which could include anything from enhancing the end-user experience, use cases related to specific scenario, we would love to have someone that has the skills to work directly in our applications. Specific to this one experience (typescript), while being able to help technicians and other colleagues use a legacy code (ASP.NET Python tech stack). We have some advanced Python tech stack, We currently have three tools that users are interacting with; one is an Edge browser extension (Javascript), one is using Streamlit web application (python based), and the other is a basic React web application."
+    },
     "liked": false,
     "applied": false
   },
@@ -41,6 +116,35 @@
       "Go",
       "Terraform"
     ],
+    "required": [
+      "5+ years of systems or network engineering experience",
+      "Deep familiarity with Linux and networking protocols (BGP, OSPF)",
+      "Experience operating Kubernetes clusters at scale",
+      "Proficiency with infrastructure-as-code (Terraform, CloudFormation)"
+    ],
+    "preferred": [
+      "Experience with observability tooling (Prometheus, Grafana)",
+      "Prior work with cloud networking (AWS VPC, Transit Gateway)"
+    ],
+    "responsibilities": [
+      "Design, build, and operate global network infrastructure for low-latency services.",
+      "Automate deployment and maintenance of infrastructure using IaC.",
+      "Troubleshoot large-scale production incidents and perform postmortems.",
+      "Collaborate with product and security teams to ensure robust network design."
+    ],
+    "benefits": [
+      { "icon": "🏠", "title": "On-site Wellness Stipend:", "description": "Monthly wellness stipend for on-site employees." },
+      { "icon": "📈", "title": "Stock Options:", "description": "Competitive equity package after probation." },
+      { "icon": "🏥", "title": "Healthcare Coverage:", "description": "Comprehensive medical, dental, and vision plans." }
+    ],
+    "companyInfo": {
+      "name": "Cursor AI",
+      "founded": "Founded in 2018",
+      "location": "Sunnyvale, CA",
+      "employees": "201-500 employees",
+      "website": "https://cursor.ai",
+      "description": "Cursor AI builds developer tools that accelerate engineering productivity with AI-powered automation."
+    },
     "liked": true,
     "applied": false
   },
@@ -67,6 +171,35 @@
       "Docker",
       "Git"
     ],
+    "required": [
+      "4+ years building web applications with React or similar frameworks",
+      "Experience with backend web frameworks (Django, Flask, Express)",
+      "Familiarity with relational databases (PostgreSQL)",
+      "Comfort deploying containerized applications"
+    ],
+    "preferred": [
+      "Experience with data visualization libraries (D3, Vega)",
+      "Prior work in research or academic software projects"
+    ],
+    "responsibilities": [
+      "Implement UI components and data visualizations for research tools.",
+      "Build and maintain backend services and APIs.",
+      "Work with researchers to translate requirements into production features.",
+      "Maintain code quality with testing and CI/CD practices."
+    ],
+    "benefits": [
+      { "icon": "🏠", "title": "Hybrid Work:", "description": "Flexible in-office and remote schedule." },
+      { "icon": "📚", "title": "Professional Development:", "description": "Conference and training stipends." },
+      { "icon": "🏥", "title": "Healthcare:", "description": "Medical, dental, and vision plans." }
+    ],
+    "companyInfo": {
+      "name": "Simons Foundation",
+      "founded": "Founded in 1994",
+      "location": "New York, NY",
+      "employees": "501-1000 employees",
+      "website": "https://www.simonsfoundation.org",
+      "description": "The Simons Foundation supports basic research in mathematics and the basic sciences."
+    },
     "liked": false,
     "applied": true
   },
@@ -85,6 +218,33 @@
     "applicants": "32 applicants",
     "description": "Build responsive and intuitive user interfaces for our SaaS platform.",
     "skills": ["React", "TypeScript", "Tailwind CSS", "Next.js", "GraphQL"],
+    "required": [
+      "5+ years frontend experience building production UIs",
+      "Strong skills in React and TypeScript",
+      "Experience with design systems and accessibility best practices"
+    ],
+    "preferred": [
+      "Experience with Next.js and server-side rendering",
+      "Familiarity with GraphQL and modern data fetching patterns"
+    ],
+    "responsibilities": [
+      "Lead frontend feature development and mentor junior engineers.",
+      "Design and maintain a scalable component library.",
+      "Collaborate closely with designers to deliver pixel-perfect UI."
+    ],
+    "benefits": [
+      { "icon": "💻", "title": "Home Office Stipend:", "description": "Allowance for home office equipment." },
+      { "icon": "📈", "title": "Equity:", "description": "Stock options included after hire." },
+      { "icon": "🏥", "title": "Health Benefits:", "description": "Medical, dental, vision coverage." }
+    ],
+    "companyInfo": {
+      "name": "TechFlow Solutions",
+      "founded": "Founded in 2012",
+      "location": "San Francisco, CA",
+      "employees": "201-500 employees",
+      "website": "https://techflow.example.com",
+      "description": "TechFlow Solutions builds enterprise SaaS products for business workflow automation."
+    },
     "liked": false,
     "applied": false
   },
@@ -103,6 +263,32 @@
     "applicants": "41 applicants",
     "description": "Develop and maintain APIs and database systems for our enterprise clients.",
     "skills": ["Node.js", "Express", "MongoDB", "Redis", "AWS", "Docker"],
+    "required": [
+      "3+ years backend development experience",
+      "Strong knowledge of Node.js and database systems",
+      "Experience building and maintaining RESTful APIs"
+    ],
+    "preferred": [
+      "Familiarity with microservices architectures",
+      "Experience with performance tuning and caching strategies"
+    ],
+    "responsibilities": [
+      "Design and implement scalable APIs and backend services.",
+      "Maintain database schemas and optimize queries.",
+      "Work with frontend teams to define API contracts and ensure reliability."
+    ],
+    "benefits": [
+      { "icon": "🏥", "title": "Healthcare:", "description": "Medical, dental, and vision plans." },
+      { "icon": "🏝️", "title": "Generous PTO:", "description": "Flexible vacation and personal days." }
+    ],
+    "companyInfo": {
+      "name": "DataCorp Inc.",
+      "founded": "Founded in 2005",
+      "location": "Chicago, IL",
+      "employees": "501-1000 employees",
+      "website": "https://datacorp.example.com",
+      "description": "DataCorp provides enterprise data solutions and analytics platforms to Fortune 1000 customers."
+    },
     "liked": false,
     "applied": false
   }

@@ -56,7 +56,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab = 'Jobs' }) => {
               <button
                 className={`w-full flex items-center space-x-3 px-3 py-2 rounded-full text-left transition-colors font-medium text-lg leading-6 tracking-tight ${
                   item.active
-                    ? 'bg-purple text-white border-2 border-purple'
+                    ? 'bg-purple text-white border-2 border-purple hover:bg-purpleSecondary'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -70,7 +70,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab = 'Jobs' }) => {
 
       {/* Upgrade Section */}
       <div className="p-4">
-        <div className="bg-purple rounded-2xl p-6 text-white">
+        <div className="bg-gradient-to-br from-purpleSecondary to-purple rounded-2xl p-6 text-white">
           <h3 className="font-semibold text-lg mb-2">Upgrade Your Plan</h3>
           <p className="text-sm opacity-90 mb-6">
             Boost your success rate now!

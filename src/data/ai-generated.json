@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "jobId": 1,
+    "title": "Why is this job a good fit for me?",
+    "matchBreakdown": [
+      {
+        "category": "Education",
+        "percentage": 93,
+        "color": "purple"
+      },
+      {
+        "category": "Work Exp",
+        "percentage": 80,
+        "color": "purple"
+      },
+      {
+        "category": "Skills",
+        "percentage": 93,
+        "color": "purple"
+      },
+      {
+        "category": "Exp. Level",
+        "percentage": 44,
+        "color": "purple"
+      }
+    ],
+    "analysis": [
+      {
+        "title": "Relevant Experience",
+        "status": "match",
+        "icon": "✓",
+        "description": "You have substantial experience as a UI/UX Designer, Interaction Designer, and User Research Specialist. Your role at Sohu aligns with designing interaction elements relevant to user experience design for digital products."
+      },
+      {
+        "title": "Seniority",
+        "status": "match",
+        "icon": "✓",
+        "description": "You have amassed over eight years of relevant experience, meeting the mid-level seniority requirement for the role."
+      },
+      {
+        "title": "Education",
+        "status": "partial",
+        "icon": "⚠",
+        "description": "While you hold a Master's degree from Politecnico di Milano in Digital and Interaction Design, it doesn't strictly align with the specified fields of Computer Science, Computer Engineering, or Information Science and Technology required by the job."
+      }
+    ],
+    "generatedAt": "2025-06-15T14:30:00Z",
+    "confidenceScore": 87
+  },
+  {
+    "id": 2,
+    "jobId": 2,
+    "title": "Why is this job a good fit for me?",
+    "matchBreakdown": [
+      {
+        "category": "Education",
+        "percentage": 88,
+        "color": "purple"
+      },
+      {
+        "category": "Work Exp",
+        "percentage": 92,
+        "color": "purple"
+      },
+      {
+        "category": "Skills",
+        "percentage": 85,
+        "color": "purple"
+      },
+      {
+        "category": "Exp. Level",
+        "percentage": 78,
+        "color": "purple"
+      }
+    ],
+    "analysis": [
+      {
+        "title": "Technical Expertise",
+        "status": "match",
+        "icon": "✓",
+        "description": "Your experience with network infrastructure, cloud platforms, and distributed systems directly aligns with the core requirements for this Software Engineer role."
+      },
+      {
+        "title": "Experience Level",
+        "status": "match",
+        "icon": "✓",
+        "description": "Your 8+ years in software engineering with focus on infrastructure places you well within the senior engineer bracket for this position."
+      },
+      {
+        "title": "Team Collaboration",
+        "status": "match",
+        "icon": "✓",
+        "description": "Your proven track record working across teams and mentoring junior engineers demonstrates the collaborative skills needed for this role at Cursor AI."
+      }
+    ],
+    "generatedAt": "2025-06-15T14:32:00Z",
+    "confidenceScore": 92
+  },
+  {
+    "id": 3,
+    "jobId": 3,
+    "title": "Why is this job a good fit for me?",
+    "matchBreakdown": [
+      {
+        "category": "Education",
+        "percentage": 75,
+        "color": "purple"
+      },
+      {
+        "category": "Work Exp",
+        "percentage": 68,
+        "color": "purple"
+      },
+      {
+        "category": "Skills",
+        "percentage": 72,
+        "color": "purple"
+      },
+      {
+        "category": "Exp. Level",
+        "percentage": 65,
+        "color": "purple"
+      }
+    ],
+    "analysis": [
+      {
+        "title": "Foundational Knowledge",
+        "status": "match",
+        "icon": "✓",
+        "description": "Your background in software development provides a solid foundation for transitioning into this product management role."
+      },
+      {
+        "title": "Industry Experience",
+        "status": "partial",
+        "icon": "⚠",
+        "description": "While you have relevant experience, your background is more technical than product-focused. Some transition training may be beneficial."
+      },
+      {
+        "title": "Growth Opportunity",
+        "status": "match",
+        "icon": "✓",
+        "description": "This role presents an excellent opportunity to leverage your technical expertise while developing product strategy and business acumen."
+      }
+    ],
+    "generatedAt": "2025-06-15T14:35:00Z",
+    "confidenceScore": 71
+  }
+]

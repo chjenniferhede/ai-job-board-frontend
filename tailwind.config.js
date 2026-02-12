@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         purple: '#A68BFA',
+        purpleSecondary: '#734AE2',
         green: '#B9FD33',
         orange: '#FFD035',
         textPrimary: '#1D2633',

@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Shrink only on X axis */
+  .shrink-x-on-hover {
+    transform: translateZ(0);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .shrink-x-on-hover:hover,
+  .shrink-x-on-hover:active {
+    transform: scaleX(0.95);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .shrink-x-on-hover {
+      transition: none;
+    }
+  }
+}

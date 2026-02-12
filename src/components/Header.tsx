@@ -13,14 +13,14 @@ const Header: React.FC<HeaderProps> = ({ activeFilter = 'Matched' }) => {
 
   return (
     <div className="bg-white fixed top-0 left-64 right-0 z-50 shadow-sm border-b border-gray-200">
-      <div className="px-6 py-4">
+      <div className="px-6 py-7">
         <div className="flex items-center justify-between">
           {/* Filter Tabs */}
           <div className="flex space-x-4">
             {filterTabs.map(tab => (
               <button
                 key={tab.name}
-                className={`flex items-center space-x-2 px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`flex items-center space-x-2 px-7 py-2 rounded-full text-xl font-medium transition-colors ${
                   tab.active
                     ? 'text-textPrimary border-2 border-purple'
                     : 'text-textSecondary hover:bg-gray-100'

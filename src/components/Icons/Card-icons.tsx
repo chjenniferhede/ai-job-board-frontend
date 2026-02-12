@@ -23,4 +23,26 @@ export const ShareIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default { HeartIcon, ShareIcon };
+export const BackArrowIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M10 19l-7-7m0 0l7-7m-7 7h18"
+    />
+  </svg>
+);
+
+export const ApplyArrowIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M7 17L17 7M17 7H7M17 7V17"
+    />
+  </svg>
+);
+
+export default { HeartIcon, ShareIcon, BackArrowIcon, ApplyArrowIcon };
