@@ -48,6 +48,13 @@
                 "c1727ad3-135e-4e26-b5ce-568174bb3777",
                 "97bc2717-5ee1-470d-8a4b-ff9360aa90c4"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -585,14 +592,47 @@
             },
             "vertices": [
               {
-                "x": 150,
-                "y": 300
+                "x": 93,
+                "y": 260
+              },
+              {
+                "x": 140,
+                "y": 290
               },
               {
                 "x": 160,
                 "y": 310
+              },
+              {
+                "x": 160,
+                "y": 330
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -835,7 +875,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -856,15 +897,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "31ca47f8-0e6d-4f92-957a-302846d79777",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "9da7ef86-85fa-4ea4-87f4-268382dff714"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             },
             "labels": [
               "Data Flow"
@@ -877,7 +937,13 @@
             "target": {
               "cell": "2768057a-df5f-4bc2-b3a8-49f0cf681524",
               "port": "00dd86e4-800e-4b4b-ac46-32c57d3c33f3"
-            }
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 290
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -948,6 +1014,10 @@
               {
                 "x": 210,
                 "y": 280
+              },
+              {
+                "x": 180,
+                "y": 330
               }
             ]
           },
@@ -1779,6 +1849,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 3
   }
 }
